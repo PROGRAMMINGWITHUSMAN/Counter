@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Counter</title>
+</head>
+<body>
+    
+    <div class="box-container">
+
+        <div class="first">
+            <p id="title">Counter</p>
+            <p id="counter-display">0</p>
+        </div>
+
+        <div class="buttons">
+            <button onclick="increment()" id="inc">Increment</button>
+            <button onclick="decrement()" id="dec">Decrement</button>
+        </div>
+
+        <button onclick="reset()" id="res">Reset</button>
+        <input type="text" id="input" placeholder="Enter the Number">
+        <div class="second">
+            <button onclick="Add()" id="add">Add</button>
+            <button onclick="Subtract()" id="sub">Subtract</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
