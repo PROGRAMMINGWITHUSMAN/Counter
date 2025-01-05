@@ -35,23 +35,21 @@ function Add(){
     document.getElementById("input").value = "";
 }
 
-function Subtract(){
-    var value = document.getElementById("input").value
-    var update = +value
+function Subtract() {
+    var value = document.getElementById("input").value;
+    var update = +value;
 
-    if (!isNaN(update) && update != "") {
-        if (counter == 0) {
-            alert("Counter is already Zero")
+    if (!isNaN(update) && update !== "") {
+        if (counter < update) {
+            alert("The Entered value is greater than the current counter value!");
+        } else {
+            counter -= update;
+            document.getElementById("counter-display").innerHTML = counter;
         }
-        else {
-            counter -= update
-            document.getElementById("counter-display").innerHTML = counter 
-        }
-    }
-    else {
+    } else {
         alert("Please enter a valid number!");
     }
-    document.getElementById("input").value = ""
-}
 
+    document.getElementById("input").value = "";
+}
 
